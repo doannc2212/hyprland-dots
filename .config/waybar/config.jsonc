@@ -1,40 +1,45 @@
 {
     "position": "top",
     "layer": "top",
-    "height": 16,
+    "height": 40,
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
-    "modules-center": ["cpu", "memory", "disk"],
-    "modules-right": ["tray", "custom/randwall", "network", "pulseaudio", "clock"],
+    "modules-left": ["custom/launcher", "custom/playerctl", "custom/playerlabel"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "custom/randwall", "pulseaudio", "clock"],
     // Modules configuration
 	"clock": {
-		"format": " {:%H:%M}",
+		"format": "  {:%H:%M}",
 		"tooltip": "true",
-        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        	"format-alt": " {:%d/%m}"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "  {:%d/%m}"
 	},
 	
 
 	"hyprland/workspaces": {
-        "active-only": false,
-        "all-outputs": true,
-        "disable-scroll": false,
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-//			"1": "一",
-//			"2": "二",
-//			"3": "三",
-//			"4": "四",
-//			"5": "五",
-			"urgent": "",
-			"active": "",
-			"default": "󰧞",
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": "7",
+		"8": "8",
+		"9": "9",
+		"10": "10",
+		// "urgent": "",
+		// "active": "",
+		// "default": "󰧞",
     "sort-by-number": true
     },
     },
@@ -112,21 +117,21 @@
 	},
 
 	"tray": {
-		"icon-size": 16,
+		"icon-size": 15,
 		"spacing": 5
 	},
 
 	"backlight": {
-        // "device": "acpi_video1",
+  // "device": "acpi_video1",
 	"format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+  "format-icons": ["", "", "", "", "", "", "", "", ""],
 //	"on-scroll-up":,
 //	"on-scroll-down":,
 	},
 
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
-        	"format-muted": "󰝟",
+    "format-muted": "󰝟",
 		"format-icons": {
 			"default": ["󰕿", "󰖀", "󰕾"]
 		},
@@ -143,9 +148,10 @@
   },
   "custom/launcher": {
     "format": "󰈸",
-    "on-click": "bash $HOME/.config/rofi/launcher.sh",
+    // "on-click": "bash $HOME/.config/rofi/launcher.sh",
+    "on-click": "killall rofi || rofi -show drun -theme ~/.config/rofi/config.rasi",
 //    "on-click": "wofi --show drun -I -a -n -W 500 -H 376 -s ~/.config/wofi/themes/gruvbox.css",
-    "on-click-right": "bash $HOME/.config/rofi/run.sh"  
+    // "on-click-right": "bash $HOME/.config/rofi/run.sh"  
 //    "on-click-right": "wofi --show run -I -a -n -W 500 -H 376 -s ~/.config/wofi/themes/gruvbox.css"  
   },
 
