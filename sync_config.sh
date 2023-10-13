@@ -1,0 +1,1 @@
+rsync -avxHAXP --exclude '.git*' .* ~/

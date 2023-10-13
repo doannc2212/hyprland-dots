@@ -1,9 +1,9 @@
 - **Window Manager** • [Hyprland](https://github.com/hyprwm/Hyprland)🎨 Tiles
   Everywhere!
-- **Shell** • [Zsh](https://www.zsh.org) 🐚 con
+- **Shell** • [Fish](https://github.com/fish-shell/fish-shell) 🐚 con
   [starship](https://github.com/starship/starship) Cross Shell Platform!
-- **Terminal** • [WezTerm](https://github.com/wez/wezterm) 💻 A powerful term
-  with gpu support!
+- **Terminal** • [Kitty](https://github.com/kovidgoyal/kitty) 💻 The fast,
+  feature-rich, cross-platform, GPU based terminal
 - **Panel** • [Waybar](https://aur.archlinux.org/packages/waybar-hyprland-git)🍧
   Patched waybar following hyprland faq!
 - **Notify Daemon** • [Dunst](https://github.com/dunst-project/dunst) 🍃
@@ -18,15 +18,17 @@
 
 <img align="center" src="/assets/r-unixporn.webp">
 
-<details>
-<summary><b>OLD SETUP</b></summary>
-
-<img align="center" src="https://i.imgur.com/QopB79H.png">
-
-[GRUVxYRLAND](https://github.com/linuxmobile/hyprland-dots/tree/Gruvland)
-</details>
-
 ### Install steps (Take care about it. Isn't a tutorial)
+
+```sh
+## Install packages
+./install.sh
+```
+
+```sh
+## sync
+./sync_config.sh
+```
 
 <details>
 
@@ -133,6 +135,7 @@ _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
 ---
 
-© [Owl4ce](https://github.com/owl4ce) © [Ilham25](https://github.com/ilham25) ©
+© [linuxmobile](https://github.com/linuxmobile/hyprland-dots)©
+[Owl4ce](https://github.com/owl4ce) © [Ilham25](https://github.com/ilham25) ©
 [Siduck](https://github.com/siduck) © [NvChad](https://github.com/NvChad) ©
 [Rxyhn](https://github.com/rxyhn) © [AmitGold](https://github.com/AmitGolden)

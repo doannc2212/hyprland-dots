@@ -1,0 +1,1 @@
+yay -S gitkraken postman-bin microsoft-edge-stable-bin bluez bluez-utils blueman bluedevil rofi-power-menu rsync ranger spotify nodejs npm fish fisher ripgrep the_silver_searcher btop fcitx5-bamboo fcitx5-qt fcitx5-gtk fcitx5-qt4-git fcitx5-qt6-git --noconfirm
